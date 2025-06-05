@@ -14,7 +14,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 680px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 10px;
   align-items: center;
@@ -37,6 +37,24 @@
   justify-content: space-between;
   margin: 15px;
   font-size: 15px;
+}
+
+ul > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cartas {
+  /* background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+
+.cartas img {
+  padding: 5px 10px;
+  background-color: rgba(75, 0, 130, 0.1);
 }
 
 .rodape {
