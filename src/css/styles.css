@@ -1,46 +1,91 @@
-* {
+body {
   font-family: "Roboto", sans-serif;
-  color: #4b0082;
+  color: #6528d3;
 }
 
 .cabecalho {
-  background-color: #000000;
+  background-color: #0e0027;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 10px;
+  margin-bottom: 60px;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1024px;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 10px;
-  align-items: center;
 }
-.produtos {
+.container .produtos {
   width: 100%;
-  display: flex;
-  justify-content: left;
-  align-items: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 32px;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
-.produtos h1 {
-  font-size: 5px;
-  color: inherit;
-}
 .container .filtros {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 15px;
-  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.container .categorias-cartas,
+.container .preco-cartas {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.container label {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.container .categorias-cartas select,
+.container .preco-cartas input {
+  padding: 16px 13px;
+  border-radius: 2px;
+  border: 2px solid #6528d3;
+  background-color: #f2eefa;
+  color: #130234;
+  height: 52px;
+  font-size: 12px;
+}
+
+.container select:focus,
+.container input:focus,
+.container select:focus-visible,
+.container input:focus-visible {
+  outline: none;
+}
+
+.container .categoria {
+  appearance: none;
+  background: url("../images/seta-para-baixo.png") 97% center no-repeat;
+}
+
+.container .filtros .btn-filtrar {
+border: none;
+  background-color: #6528d3;
+  color: #EDEDED;
+  font-weight: 500;
+  letter-spacing: 2px;
+  height: 52px;
+  width: 177px;
+  padding: 16px 32px;
+  border-radius: 2px;
+  align-self: end;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .filtros .btn-filtrar:hover {
+  background-color: #33008F;
 }
 
 ul > li {
-  display: inline-block;
   margin-right: 10px;
 }
 
@@ -48,13 +93,51 @@ ul > li {
   /* background: red; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 32px;
 }
 
-.cartas img {
-  padding: 5px 10px;
-  background-color: rgba(75, 0, 130, 0.1);
+.carta {
+  padding: 5px 0 5px 0;
+  background-color: rgba(75, 0, 130, 0.2);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 2px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.informacoes .nome-personagem {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.informacoes .categoria {
+  padding: 5px 0 5px 0;
+}
+.informacoes .preco {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding-bottom: 5px;
+}
+.informacoes .btn-comprar {
+  background-color: #4b0082;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .rodape {
