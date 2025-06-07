@@ -16,12 +16,11 @@ body {
   margin: 0 auto;
 }
 .container .produtos {
-  width: 100%;
-  margin-bottom: 32px;
-  line-height: 32px;
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 2px;
+  line-height: 32px;
+  margin-bottom: 32px;
 }
 
 .container .filtros {
@@ -61,15 +60,15 @@ body {
   outline: none;
 }
 
-.container .categoria {
+.container select.categoria {
   appearance: none;
   background: url("../images/seta-para-baixo.png") 97% center no-repeat;
 }
 
 .container .filtros .btn-filtrar {
-border: none;
+  border: none;
   background-color: #6528d3;
-  color: #EDEDED;
+  color: #ededed;
   font-weight: 500;
   letter-spacing: 2px;
   height: 52px;
@@ -82,70 +81,83 @@ border: none;
 }
 
 .container .filtros .btn-filtrar:hover {
-  background-color: #33008F;
+  background-color: #33008f;
 }
 
-ul > li {
-  margin-right: 10px;
-}
-
-.cartas {
-  /* background: red; */
+.container .cartas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
+  margin-top: 32px;
   gap: 32px;
 }
 
-.carta {
-  padding: 5px 0 5px 0;
-  background-color: rgba(75, 0, 130, 0.2);
-  border-radius: 10px;
+.container .cartas .carta {
+  max-width: 365px;
+  background-color: #ededed;
+  border-radius: 20px;
   margin-bottom: 10px;
+  box-shadow: 0 6px 12px rgb(0, 0, 0, 0.2);
 }
 
-.informacoes {
+.container .carta img {
+  width: 100%;
+  padding: 20px;
+}
+
+.container .carta .informacoes {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: 2px;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: #ffffff;
+  gap: 10px;
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.informacoes .nome-personagem {
-  font-size: 20px;
-  font-weight: bold;
+.container .carta .informacoes .nome-personagem {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
 }
 
-.informacoes .categoria {
-  padding: 5px 0 5px 0;
+.container .carta .informacoes .categoria {
+  color: #7e7e7e;
+  font-weight: 700;
 }
-.informacoes .preco {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  padding-bottom: 5px;
+.container .carta .informacoes .preco {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #4e8e5c;
 }
-.informacoes .btn-comprar {
-  background-color: #4b0082;
-  color: #ffffff;
+.container .carta .informacoes .btn-comprar {
+  background-color: #6528d3;
+  color: #ededed;
+  padding: 16px;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 4px;
+  letter-spacing: 2px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .carta .informacoes .btn-comprar:hover {
+  background-color: #33008f;
 }
 
 .rodape {
-  background-color: #4b0082;
+  background-color: #6528d3;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
-  color: #ffffff;
-  font-size: 14px;
+  padding: 20px;
+  margin-top: 60px;
+  color: #ededed;
+}
+
+.esconder {
+  display: none;
+}
+
+.mostrar {
+  display: block;
 }
