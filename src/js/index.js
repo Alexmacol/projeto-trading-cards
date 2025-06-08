@@ -16,6 +16,7 @@ botaoFiltrar.addEventListener("click", () => {
     }
   });
 });
+
 function filtrarCartas(categoriaSelecionada, categoriaCarta, mostrarCarta, precoMaximoSelecionado, precoCarta) {
   const temFiltroDeCategoria = categoriaSelecionada !== "";
   const cartaNaoBateComFiltroDeCategoria = categoriaSelecionada.toLowerCase() !== categoriaCarta.toLowerCase();
