@@ -50,14 +50,14 @@ O design é **limpo**, **organizado** e de fácil navegação, facilitando a vis
 ```
 📦 projeto-trading-cards
 ├── index.html
-├── src/
-│   ├── css/
+├──📁 src/
+│   ├──📁 css/
 │   │   ├── reset.css
 │   │   ├── styles.css
 │   │   └── responsive.css
-│   ├── js/
+│   ├──📁 js/
 │   │   └── index.js
-│   └── images/
+│   └──📁 images/
 │       └── (imagens das cartas e elementos visuais)
 └── README.md
 ```
