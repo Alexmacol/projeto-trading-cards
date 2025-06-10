@@ -49,7 +49,6 @@ O design é **limpo**, **organizado** e de fácil navegação, facilitando a vis
 ## 📁 Estrutura do Projeto
 ```
 📦 projeto-trading-cards
-├── index.html
 ├──📁 src/
 │   ├──📁 css/
 │   │   ├── reset.css
@@ -59,6 +58,7 @@ O design é **limpo**, **organizado** e de fácil navegação, facilitando a vis
 │   │   └── index.js
 │   └──📁 images/
 │       └── (imagens das cartas e elementos visuais)
+├── index.html
 └── README.md
 ```
 
